@@ -1,0 +1,60 @@
+.section_contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.title_form{
+    margin: 0;
+}
+form{
+    width: 80%;
+    margin-top: 3em;
+}
+form>label,.form_txt_obligatoire,.demande,.items_prenom{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+input{
+    margin: 1em 0;
+}
+.item_checkbox{
+    margin: 2em 0;
+}
+#prenom,#name,#mail,#phone{
+    width: 100%;
+    height: 3em;
+}
+#message{
+    width: 100%;
+    height: 5em;
+}
+.stars_form{
+    color: red;
+}
+.button_form{
+    width: 6em;
+    height: 4em;
+    margin: 2em 0;
+    border: none;
+    color: white;
+    background-color: black;
+}
+/* -------------Gestion des input sur la meme ligne-------------- */
+.items_form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.items_prenom{
+    width: 45%;
+}
+@media screen and (max-width: 575px) {
+    .items_form{
+        flex-direction: column;
+    }
+    .items_prenom{
+        width: 100%;
+    }
+}

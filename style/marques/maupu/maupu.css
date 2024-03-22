@@ -1,0 +1,44 @@
+.title_maupu{
+    text-align: center;
+    font-size: 3em;
+}
+.txt_presentation_maupu{
+    width: 100%;
+    max-width: 50em;
+    text-align: justify;
+    margin: 0 1em;
+}
+.slider_maupu{
+    width: 100%;
+}
+.div_top_maupu{
+    height: 20em;
+    width: 100%;
+    margin-top: 4.5em;
+    background-image: url('/spai/images/maupu/bbm-17.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 976px) {
+    
+    .items_caracteristiques{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .txt_semi_remorque{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    
+    .container_semi_remorque{
+        flex-direction: column;
+        align-items: center;
+    }
+    .items_remorque{
+        width: 80%;
+    }
+}

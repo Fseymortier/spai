@@ -1,0 +1,16 @@
+/*------------------- Qui sommes nous ----------------------- */
+.quiSommeNous {
+    margin: 3em 0;
+    text-align: center;
+}
+
+.content_quiSommeNous {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: start;
+}
+
+.txt_quiSommeNous {
+    width: 60%;
+}

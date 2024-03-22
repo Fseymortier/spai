@@ -1,0 +1,22 @@
+# Ignore IDE auto generate files
+/.idea
+/.vscode
+
+# Ignore auto generate components files
+/node_modules
+/vendor
+/public/build
+/package-lock.json
+/composer.lock
+
+# Ignore linked folder
+/public/storage
+
+# Ignore logs files
+/storage/logs/*.log
+
+# Ignore local environnements datas
+/.env
+
+/images
+/documents

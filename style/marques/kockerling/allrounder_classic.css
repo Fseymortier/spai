@@ -1,0 +1,80 @@
+.h2_kockerling{    
+    margin: 1em 0;
+    color: #01528e;
+}
+.h3_kockerling{
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
+    color: #01528e;
+}
+.item_tableau{
+    width: 45%;
+    text-align: center;
+}
+table{    
+    text-align: center;
+    width: 100%;
+    border:1px solid #01528e;
+}
+td{
+    border:1px solid #01528e;
+    padding: 1em 0;
+}
+.kockerling_link{
+    margin: 1em;
+    padding: 1em 2em;
+    background-color: #01528e;
+    color: white;
+    border-radius: 0.5em;
+}
+/* ----------------------dechaumeur----------------------- */
+.content_trio{
+    width: 45%;
+    margin: 2em 0;
+    text-align: justify;
+}
+.ul_trio{
+    margin: 1em;
+    padding: 1em;
+}
+/* -------------------------semoir-------------------------- */
+.item_semis{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1em 0;
+    text-align: justify;
+}
+.img_semoir{
+    width: 100%;
+}
+/* --------------------module--------------------- */
+.item_module{
+    width: 45%;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item_report_verin{
+    display: flex;
+}
+.content_module{
+    width: 60%;
+}
+.img_module{
+    width: 30%;
+    margin: 1em;
+    object-fit: contain;
+}
+.img_tremis{
+    width: 100%;
+    object-fit: cover;
+}
+/* entretien et prairie */
+.container_prairie{
+    flex-direction: column;
+    align-items: center;
+}

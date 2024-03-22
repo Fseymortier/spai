@@ -1,0 +1,80 @@
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(#fff, #ffffffe0, #ffffff99, #ffffff00);
+    z-index: 1;
+}
+.logo_nav{
+    width: 100%;
+    max-width: 15em;
+    object-fit: contain;
+}
+/* -----------menus de navigation--------- */
+.container_menu{
+    display: flex;
+}
+.item_menu{
+    margin: 0 1em;
+    cursor: pointer;
+}
+.menu_apropos,.menu_materiel,.menu_service{
+    padding: 1em 0;
+}
+.arrow_header{
+    width: 1em;
+}
+.arrow_right{
+    margin-left: 0.5em;
+    width: 0.7em;
+}
+.first_menu,.second_menu{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: #ffff;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.first_menu{
+    width: auto;
+    border-radius: 0 0 0 1em;
+}
+.first_menu_apropos,.first_menu_service{
+    border-radius: 0 0 1em 1em;
+}
+.link_first_menu,.link_menu_marques{
+    padding: 1em;
+}
+.second_menu{
+    width: 13em;
+    left: 98px;
+    padding-left: 0.5em;
+    border-radius: 0 1em 1em 1em;
+}
+/* -------Gestion de l'affiche des menu nav ---------*/
+.menu_materiel:hover + .first_menu_materiel,.first_menu_materiel:hover,
+.menu_service:hover + .first_menu_service,.first_menu_service:hover,
+.menu_apropos:hover + .first_menu_apropos, .first_menu_apropos:hover,
+.link_neuf:hover + .second_menu,.second_menu:hover{
+    visibility: visible;
+    opacity: 1;
+}
+/* ----------Réseaux sociaux------------ */
+.container_reseaux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icone_reseaux{
+    width: 2em;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 0 2px;
+}

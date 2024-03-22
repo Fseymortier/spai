@@ -1,0 +1,32 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #dde3dd;
+    padding: 1.5em 0;
+}
+.item_footer{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
+    text-align: center;
+}
+.titles_footer{
+    margin: 0.5em 0;
+}
+.txt_jour_footer{
+    font-weight: bold;
+}
+.link_footer{
+    margin: 0.5em;
+}
+@media screen and (max-width: 844px) {
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .item_footer{
+        width: 100%;
+    }
+}

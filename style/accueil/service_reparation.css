@@ -1,0 +1,20 @@
+/*------------- Services réparations & maintenance ------------*/
+.container_services {
+    text-align: center;
+}
+.img_service_reparation{
+    width: 20%;
+    margin: 2em 0;
+}
+.content_services {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.items_services {
+    width: 30%;
+    margin: 1em;
+}

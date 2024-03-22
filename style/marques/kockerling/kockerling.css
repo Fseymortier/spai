@@ -1,0 +1,45 @@
+.div_top_kockerling{
+    height: 20em;
+    width: 100%;
+    margin-top: 4.5em;
+    background-image: url('/spai/images/kockerling/top_kockerling.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.txt_presentation_kockerling{
+    width: 40%;
+    margin: 1em;
+}
+.container_kockerling{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.5em;
+}
+.img_travail_sol{
+    width: 40%;
+    object-fit: cover;
+}
+.container_txt_travail_sol{
+    width: 40%;
+}
+.ul_travail_sol{
+    margin: 1em;
+}
+
+@media screen and (max-width: 1008px) {
+    .txt_presentation_kockerling{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    .container_kockerling{
+        flex-direction: column;
+    }
+    .item_tableau,.txt_allrounder_flatline,.content_trio,.item_semis,.item_module,.container_txt_travail_sol,.img_travail_sol{
+        width: 100%;
+    }
+
+}

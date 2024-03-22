@@ -1,0 +1,17 @@
+/*---------- Notre équipe reste à votre disposition ---------*/
+.container_notre_equipe {
+    height: 37em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-image: url('../../images/accueil/Contact-fond.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item_notre_equipe {
+    width: 30%;
+}
+.txt_notre_equipe{
+    font-weight: bold;
+}

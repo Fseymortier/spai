@@ -1,0 +1,30 @@
+.section_contact{
+    display: flex;
+    justify-content: center;
+}
+.container_contact{
+    width: 90%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.stars_form{
+    color: red;
+}
+form >label,.form_txt_obligatoire{
+    font-size: 1.5em;
+    margin: 1em 0 0.5em 0;
+    font-weight: bold;
+}
+#name,#mail,#phone,#service,#message{
+    height: 3em;
+}
+.button_form{
+    width: 5em;
+    height: 3em;
+    margin: 2em 0;
+    border: none;
+    color: white;
+    background-color: black;
+}
