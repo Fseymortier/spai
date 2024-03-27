@@ -1,60 +1,91 @@
-.section_contact{
+.section_contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.title_form{
-    margin: 0;
-}
-form{
+form {
     width: 80%;
-    margin-top: 3em;
 }
-form>label,.form_txt_obligatoire,.demande,.items_prenom{
-    font-size: 1.5em;
+label,
+.champ_obligatoire {
     font-weight: bold;
+    font-size: 1.5em;
 }
-input{
+input,
+textarea {
+    padding: 0.5em;
+}
+.champ_obligatoire {
     margin: 1em 0;
 }
-.item_checkbox{
-    margin: 2em 0;
-}
-#prenom,#name,#mail,#phone{
-    width: 100%;
-    height: 3em;
-}
-#message{
-    width: 100%;
-    height: 5em;
-}
-.stars_form{
+/* ----------------------- * label ----------------- */
+.stars_form {
     color: red;
 }
-.button_form{
-    width: 6em;
-    height: 4em;
-    margin: 2em 0;
+/* -----------------------button radio objet demande----------------- */
+.items_radio {
+    display: flex;
+    align-items: center;
+    margin: 1em 0 1em 2em;
+}
+.items_radio > label {
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-left: 1em;
+}
+.items_radio > input {
+    width: 2em;
+    height: 2em;
+}
+/* -----------------------prenom nom mail telephone----------------- */
+input {
+    height: 3em;
+}
+.container_prenom_nom,
+.container_mail_phone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item_prenom,
+.item_nom,
+.item_mail,
+.item_phone {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+/* ----------------------------message-------------------------------- */
+.item_message {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+textarea {
+    height: 6em;
+}
+/* --------------------------button envoyer---------------------------- */
+.button_form {
+    width: 5em;
+    height: 3em;
+    font-size: 1.3em;
+    margin: 1em 0;
     border: none;
     color: white;
     background-color: black;
 }
-/* -------------Gestion des input sur la meme ligne-------------- */
-.items_form{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 1em;
-}
-.items_prenom{
-    width: 45%;
-}
-@media screen and (max-width: 575px) {
-    .items_form{
+/* -------------------------media querys------------------------- */
+@media screen and (max-width: 580px) {
+    .container_prenom_nom,
+    .container_mail_phone {
         flex-direction: column;
     }
-    .items_prenom{
+
+    .item_prenom,
+    .item_nom,
+    .item_mail,
+    .item_phone {
         width: 100%;
     }
 }

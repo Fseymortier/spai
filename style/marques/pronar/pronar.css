@@ -3,7 +3,9 @@
 ---------------------------------------------------------------------------------------- */
 
 /* Fonds du haut des page pronar besson et alpego */
-.div_top_pronar,.div_top_besson,.div_top_alpego{
+.div_top_pronar,
+.div_top_besson,
+.div_top_alpego {
     height: 20em;
     width: 100%;
     margin-top: 4.5em;
@@ -11,47 +13,55 @@
     background-size: cover;
     background-position: center;
 }
-.div_top_pronar{    
+.div_top_pronar {
     background-image: url('/spai/images/pronar/top_pronar.webp');
 }
-.div_top_besson{    
+.div_top_besson {
     background-image: url('/spai/images/pronar/top_besson.webp');
 }
-.div_top_alpego{    
+.div_top_alpego {
     background-image: url('/spai/images/pronar/top_alpego.webp');
 }
-.txt_presentation_pronar{
+.txt_presentation_pronar {
     width: 40%;
     margin: 1em;
 }
-/*  */
-.container_benne{
+/* presentation du materiel avant les slider */
+.container_benne {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.container_items_benne{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.txt_presentation_benne{
+.txt_presentation_benne {
     width: 60%;
     text-align: center;
     padding: 2em 0;
 }
-.background{
+/* ------------------slider---------------- */
+.slider,
+.diapo {
+    position: relative;
+    height: 20em;
+    width: 100%;
+}
+.background {
     z-index: -1;
     position: absolute;
     height: 100%;
     width: 100%;
     transform: skewY(-5deg);
 }
-.background_amplirolls{    
+.background_amplirolls {
     transform: skewY(5deg);
 }
-.items_benne{
+/* contenu du materiel presenté endessous des sliders */
+.container_items_benne {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.items_benne {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -60,32 +70,27 @@
     padding: 1em;
     margin: 1em;
 }
-.container_dl{
+.container_dl {
     text-align: center;
 }
-.dl_document{
+.dl_document {
     padding: 1em 1.5em;
     margin: 1em;
     border-radius: 1em;
 }
 /* bouton de téléchargement sur la page gregoire besson */
-.dl_document_besson{
+.dl_document_besson {
     color: white;
 }
 
-/* ------------------slider---------------- */
-.slider,.diapo{
-    position: relative;
-    height: 20em;
-    width: 100%;
-}
-@media screen and (max-width: 1039px) {    
-    .txt_presentation_pronar,.txt_presentation_benne{
+@media screen and (max-width: 1039px) {
+    .txt_presentation_pronar,
+    .txt_presentation_benne {
         width: 560px;
     }
 }
-@media screen and (max-width: 600px) {    
-    .txt_presentation_benne{
+@media screen and (max-width: 600px) {
+    .txt_presentation_benne {
         width: 80%;
     }
 }

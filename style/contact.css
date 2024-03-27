@@ -1,29 +1,51 @@
-.section_contact{
+.section_contact {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
-.container_contact{
-    width: 90%;
-}
-form{
+form {
+    width: 80%;
     display: flex;
     flex-direction: column;
 }
-.stars_form{
+.stars_form {
     color: red;
 }
-form >label,.form_txt_obligatoire{
-    font-size: 1.5em;
-    margin: 1em 0 0.5em 0;
-    font-weight: bold;
+/* --------------------contenu form-------------- */
+.champ_obligatoire {
+    margin: 1em 0;
 }
-#name,#mail,#phone,#service,#message{
+label,
+.champ_obligatoire {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+label {
+    margin-top: 1em;
+}
+input,
+select {
+    margin-bottom: 1em;
+}
+input,
+textarea,
+select {
+    padding: 0.5em;
     height: 3em;
 }
-.button_form{
+option,
+select {
+    font-size: 1em;
+}
+textarea {
+    height: 6em;
+}
+/* --------------------button envoyer-------------- */
+.button_form {
     width: 5em;
     height: 3em;
-    margin: 2em 0;
+    font-size: 1.3em;
+    margin: 1em 0;
     border: none;
     color: white;
     background-color: black;
