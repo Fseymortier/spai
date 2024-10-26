@@ -1,4 +1,4 @@
-# Refont et optimisation du site du conssecionaire SPAI à partir de la première version du site déjà existant. 
+# Refonte et optimisation du site du concessionnaire SPAI à partir de la première version du site déjà existant. 
 
 Correction des différents bugs présents.
 
