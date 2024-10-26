@@ -15,3 +15,11 @@
 .txt_notre_equipe{
     font-weight: bold;
 }
+@media screen and (max-width: 900px) {
+    .container_notre_equipe{
+        justify-content: center;
+    }
+    .item_notre_equipe{
+        width: 90%;
+    }
+}

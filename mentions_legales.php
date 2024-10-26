@@ -1,9 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
-    <link rel="stylesheet" href="/spai/style/mentions_legales.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!----------------------------------------------- style ----------------------------------------------------------->
+    <link rel="stylesheet" type="text/css" href="/style/header.css">
+    <link rel="stylesheet" type="text/css" href="/style/index.css">
+    <link rel="stylesheet" type="text/css" href="/style/actualites.css">
+    <link rel="stylesheet" type="text/css" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/mentions_legales.css">
+    <!------------------------------------------------ onglet ------------------------------------------------------------>
+    <title>Mentions Légales - SPAI-France</title>
+    <link rel="icon" href="/images/logo.ico" type="image/x-icon" />
+    <!------------------------------------------------ font ------------------------------------------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!------------------------------------------------ SEO ------------------------------------------------------------>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="description" content="Retrouvez nos Mentions légales et conditions d'utilisation du site sur cette Page. Pour toute demande d'information : contact@spai-france.com">
+    <!-- <link rel="canonical" href="https://spai-france.com/mentions-legales.php"> a modifier-->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Mentions légales - SPAI-France">
+    <meta property="og:description" content="Retrouvez nos Mentions légales et conditions d'utilisation du site sur cette Page. Pour toute demande d'information : contact@spai-france.com">
+    <!-- <meta property="og:url" content="https://spai-france.com/mentions-legales.php"> a modifier-->
+    <meta property="og:site_name" content="SPAI-France" />
 </head>
-<?php
-$title = 'Mentions Légales';
-require_once('./header.php'); ?>
+<!--------------------------------------------------- Header ---------------------------------------------------------------------------->
+<?php require_once('./composants/header.php'); ?>
+
 <section class="container_mentions">
     <div class="container_items">
         <div class="items_mentions">
@@ -142,4 +171,5 @@ require_once('./header.php'); ?>
         </div>
     </div>
 </section>
-<?php require_once('./footer.php'); ?>
+<!--------------------------------------------------- footer ---------------------------------------------------------------------------->
+<?php require_once('./composants/footer.php'); ?>

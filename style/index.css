@@ -3,6 +3,14 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --alpego: #4f8fcd;
+    --besson: #e30713;
+    --kockerling: #01528e;
+    --maupu: #f73640;
+    --pronar: #e57816;
+}
+/*-------- Gestion globale des balises -------*/
 section{    
     margin: 1.5em 0;
     padding: 1.5em 0;
@@ -11,12 +19,13 @@ h1,h2,h3,h4{
     font-family: "Oxygen", sans-serif;
 }
 h1{
-    margin: 2em 1em;
+    margin: 2em 0;
     width: 55%;
 }
 h1,h2{
     font-size: 3em;
     width: 100%;
+    padding: 0 0.5em;
 }
 h2{
     text-align: center;
@@ -27,7 +36,7 @@ h3{
     font-size: 1.5em;
     text-align: center;
 }
-p,li,label,table,input,textarea{
+p,li,label,table,input,textarea,select,option{
     font-family: "Raleway", sans-serif;
 }
 p,li{    
@@ -40,6 +49,7 @@ a{
     text-decoration: none;
     color: inherit;
 }
+/* ------------ gestion de l'entete ---------- */
 .logo_spai{
     width: 100%;
     max-width: 25em;
@@ -67,7 +77,13 @@ a{
     min-height: 100vh;
     margin-top: 0;
 }
-
+input,select,textarea{
+    border-radius: 2em;
+}
+textarea,.saisie, select{
+    padding: 0.5em 1.5em;
+}
+/*--------------------media query------------------*/
 @media screen and (max-width: 950px) {
     .content_quiSommeNous {
         flex-direction: column;
@@ -76,7 +92,6 @@ a{
         width: 80%;
     }
 }
-
 @media screen and (max-width: 900px) {
     .items_marques_left{
         flex-direction: column-reverse;
@@ -85,13 +100,19 @@ a{
         flex-direction: column;
     }
     .content_marques{
-        width: 80%;
+        width: 90%;
         max-width: none;
     }
     .link_marques{
-        width: 80%;
+        width: 90%;
+        height: 20em;
+        border-radius: 2em;
+    }
+    .container_notre_equipe{
+        justify-content: center;
     }
     .item_notre_equipe{
+        text-align: center;
         width: 80%;
     }
 }
@@ -103,7 +124,7 @@ a{
         width: 80%;
     }
     .txt_quiSommeNous{
-        width: 80%;
+        width: 90%;
     }
 }
 @media screen and (max-width: 600px) {
@@ -112,11 +133,10 @@ a{
     }
     h3{
         font-size: 1.3em;
-    }
-    
+    }    
 }
 @media screen and (max-width: 500px) {    
     .link_marques{
-        height: 20em;
+        height: 15em;
     }
 }

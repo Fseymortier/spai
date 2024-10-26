@@ -1,0 +1,58 @@
+.section_contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5em;
+}
+.stars_form {
+    color: red;
+}
+.champ_obligatoire {
+    margin: 1em 0;
+}
+label,
+.champ_obligatoire {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+input,
+select {
+    padding: 0.5em;
+    height: 3em;
+    margin-bottom: 1.5em;
+}
+textarea {
+    height: 8em;
+}
+.label_choix{
+    display: flex;
+    align-items: center;
+}
+input[type="radio"]{
+    margin: 0 0.5em;
+}
+/* --------------------------button envoyer---------------------------- */
+.button_form {
+    width: 7em;
+    height: 3em;
+    font-size: 1.3em;
+    margin: 1em 0;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+@media screen and (max-width: 630px) {
+    form{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    label,.champ_obligatoire,.button_form{
+        font-size: 1.1em;
+    }
+}

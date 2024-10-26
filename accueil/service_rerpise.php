@@ -9,7 +9,7 @@
             Contactez nous dès maintenant pour bénéficier de notre expertise et de notre qualité de service.</p>
     </div>
     <div class="img_link_service_reprise">
-        <img src="./images/accueil/spai.webp" class="logo_spai" alt="logo SPAI">
-        <a href="reprise-materiel.php" class="link_buton contact_buton">Vendre mon matériel</a>
+        <img src="/images/accueil/spai.webp" class="logo_spai" alt="logo SPAI">
+        <a href="/concession-materiel-agricole/reprise_materiel.php" class="link_buton contact_buton">Vendre mon matériel</a>
     </div>
 </section>

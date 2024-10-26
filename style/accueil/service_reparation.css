@@ -4,6 +4,7 @@
 }
 .img_service_reparation{
     width: 20%;
+    min-width: 10em;
     margin: 2em 0;
 }
 .content_services {
@@ -17,4 +18,9 @@
 .items_services {
     width: 30%;
     margin: 1em;
+}
+@media screen and (max-width: 750px) {
+    .items_services{
+        width: 90%;
+    }
 }

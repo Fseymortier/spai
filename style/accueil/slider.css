@@ -20,6 +20,7 @@
   animation-name: fade;
   animation-duration: 4s;
   animation-fill-mode: backwards;
+  height: 100%;
 }
 
 @keyframes fade {

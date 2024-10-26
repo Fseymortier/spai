@@ -13,3 +13,11 @@
     flex-direction: column;
     align-items: center;
 }
+@media screen and (max-width: 800px) {
+    .container_service_reprise{
+        flex-direction: column;
+    }
+    .content_service_reprise{
+        width: 90%;
+    }
+}

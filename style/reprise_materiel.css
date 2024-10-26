@@ -33,60 +33,30 @@
     width: 50%;
     margin: 1em;
 }
-.title_votre_expert{
-    text-align: start;
-}
 .txt_votre_expert{
     margin: 1em 0;
     text-align: justify;
 }
-/* ----------formulaire de contact------------ */
-.form_reprise{
-    display: flex;
-    justify-content: center;
-}
-.section_contact{
-    display: flex;
-    justify-content: center;
-}
-.container_contact{
-    width: 90%;
-}
-form{
-    display: flex;
-    flex-direction: column;
-}
-.stars_form{
-    color: red;
-}
-form >label,.txt_obligatoire{
-    margin: 1em 0 0.5em 0;
-    font-weight: bold;
-}
-#prenom,#name,#mail,#phone,#service{
-    height: 3em;
-}
-#description{
-    height: 10em;
-}
-.button_form{
-    width: 5em;
-    height: 3em;
-    margin: 2em 0;
-    border: none;
-    color: white;
-    background-color: black;
-}
 @media screen and (max-width: 1000px) {
     .section_top_reprise{
-        padding: 2em;
+        padding: 0;
+        justify-content: center;
+    }
+    .top_reprise_materiel{
+        width: 90%;
     }
     .txt_top_reprise_materiel{
-        width: 80%;
+        width: 100%;
     }
 }
 @media screen and (max-width: 944px) {
     .content_votre_expert{
-        width: 80%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content_votre_expert{
+        width: 100%;
     }
 }

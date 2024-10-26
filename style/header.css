@@ -1,80 +1,156 @@
-nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    background: linear-gradient(#fff, #ffffffe0, #ffffff99, #ffffff00);
-    z-index: 1;
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: linear-gradient(#fff, #ffffffe0, #ffffff99, #ffffff00);
+  z-index: 1;
+  padding: 0.5em;
 }
-.logo_nav{
-    width: 100%;
-    max-width: 15em;
-    object-fit: contain;
+.link_accueil {
+  width: 30%;
+  max-width: 15em;
 }
-/* -----------menus de navigation--------- */
-.container_menu{
-    display: flex;
+.logo_nav {
+  width: 100%;
+  object-fit: contain;
 }
-.item_menu{
-    margin: 0 1em;
-    cursor: pointer;
+/* -----------------------------------menus de navigation--------------------------------------- */
+.items_reseau {
+  position: relative;
 }
-.menu_apropos,.menu_materiel,.menu_service{
-    padding: 1em 0;
+.container_menu {
+  display: flex;
 }
-.arrow_header{
-    width: 1em;
+.item_menu {
+  margin: 0 0.5em;
+  cursor: pointer;
 }
-.arrow_right{
-    margin-left: 0.5em;
-    width: 0.7em;
+.menu_apropos,
+.menu_materiel,
+.menu_service {
+  padding: 1em 0.5em;
+  text-align: center;
 }
-.first_menu,.second_menu{
-    position: absolute;
+.arrow_header {
+  width: 1em;
+}
+.arrow_right {
+  margin-left: 0.5em;
+  width: 0.7em;
+}
+.first_menu,
+.second_menu {
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: #ffff;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.first_menu {
+  width: auto;
+  border-radius: 0 0 0 1em;
+}
+.first_menu_apropos,
+.first_menu_service {
+  border-radius: 0 0 1em 1em;
+}
+.link_first_menu,
+.link_menu_marques {
+  padding: 1em;
+}
+.second_menu {
+  width: 13em;
+  left: 98px;
+  padding-left: 0.5em;
+  border-radius: 0 1em 1em 1em;
+}
+.menu_sandwich {
+  width: 30%;
+  max-width: 4em;
+  display: none;
+  cursor: pointer;
+}
+.img_menu_sandwich {
+  width: 100%;
+}
+/* --------------------------Gestion de l'affichache des menus nav ----------------------------------*/
+.menu_materiel:hover + .first_menu_materiel,
+.first_menu_materiel:hover,
+.menu_service:hover + .first_menu_service,
+.first_menu_service:hover,
+.menu_apropos:hover + .first_menu_apropos,
+.first_menu_apropos:hover,
+.link_neuf:hover + .second_menu,
+.second_menu:hover {
+  visibility: visible;
+  opacity: 1;
+}
+/* --------------------------------------Réseaux sociaux------------------------------------------ */
+.menu_sandwich_reseau {
+  display: none;
+  max-width: 3.5em;
+  cursor: pointer;
+}
+.container_reseaux {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icone_reseaux {
+  width: 100%;
+  max-width: 3.5em;
+  background-color: white;
+  border: 2px solid;
+  border-radius: 1em;
+  margin: 0 0.5em;
+}
+/* media query pour gérer la navigation au format mobile */
+@media screen and (max-width: 853px) {
+  .container_menu {
     visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    color: #ffff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
     opacity: 0;
-    transition: 0.5s ease-in-out;
-}
-.first_menu{
-    width: auto;
-    border-radius: 0 0 0 1em;
-}
-.first_menu_apropos,.first_menu_service{
-    border-radius: 0 0 1em 1em;
-}
-.link_first_menu,.link_menu_marques{
-    padding: 1em;
-}
-.second_menu{
-    width: 13em;
-    left: 98px;
-    padding-left: 0.5em;
-    border-radius: 0 1em 1em 1em;
-}
-/* -------Gestion de l'affiche des menu nav ---------*/
-.menu_materiel:hover + .first_menu_materiel,.first_menu_materiel:hover,
-.menu_service:hover + .first_menu_service,.first_menu_service:hover,
-.menu_apropos:hover + .first_menu_apropos, .first_menu_apropos:hover,
-.link_neuf:hover + .second_menu,.second_menu:hover{
+    z-index: 1;
+    background-color: white;
+    transition: 0.1s ease-in;
+  }
+  .menu_sandwich {
+    display: block;
+  }
+  .menu_sandwich:hover + .container_menu,
+  .container_menu:hover {
     visibility: visible;
     opacity: 1;
+  }
+  .link_accueil {
+    max-width: 4em;
+  }
 }
-/* ----------Réseaux sociaux------------ */
-.container_reseaux{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.icone_reseaux{
-    width: 2em;
-    background-color: white;
-    border: 2px solid;
-    border-radius: 5px;
-    margin: 0 2px;
+@media screen and (max-width: 500px) {
+  .container_reseaux {
+    visibility: hidden;
+    flex-direction: column;
+    position: absolute;
+  }
+  .menu_sandwich_reseau {
+    display: block;
+  }
+  .menu_sandwich_reseau:hover + .container_reseaux,
+  .container_reseaux:hover {
+    visibility: visible;
+  }
+  .icone_reseaux {
+    margin: 0;
+  }
 }

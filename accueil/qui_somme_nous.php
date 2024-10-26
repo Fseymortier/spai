@@ -17,5 +17,5 @@
             </p>
         </div>
     </div>
-    <a href="./page_contact.php" class="link_buton contact_buton">Contactez-nous</a>
+    <a href="/contact.php" class="link_buton contact_buton">Contactez-nous</a>
 </section>

@@ -1,4 +1,4 @@
-/* ------------------------ Marques --------------------------*/
+/* ------------------------ nos marques --------------------------*/
 .container_marques{    
     background: linear-gradient(274deg, RGBA(217, 180, 0, 0.7), RGBA(0, 161, 0, 0.7));
 }
@@ -46,7 +46,7 @@
 .img_marques_left{    
     border-radius: 20em 3em 3em 3em;
 }
-/* Fond des liens link_marques */
+/* ----------------Fond des liens link_marques------------- */
 .img_pronar{
     background-image: url('../../images/accueil/pronar2.webp');
 }
@@ -62,40 +62,41 @@
 .img_alpego{
     background-image: url('../../images/accueil/alpego2.webp');
 }
-/* gestion des couleurs des textes spécifique aux marques */
+/* gestion des couleurs des textes et bouton spécifique aux marques */
 .txt_colored{
     font-weight: bold;
 }
 .pronar{
-    color: #e57816;
+    color: var( --pronar);
 }
 .pronar_link{
-    background-color: #e57816;
+    background-color: var( --pronar);
 }
 .kockerling{
-    color: #01528e;
+    color: var(--kockerling);
 }
 .kockerling_link{
     color: white;
-    background-color: #01528e;
+    background-color: var(--kockerling);
 }
-.bm{
-    color: #f73640;
+.maupu{
+    color: var(--maupu);
 }
-.bm_link{
-    background-color: #f73640;
+.maupu_link{
+    background-color: var(--maupu);
 }
 .besson{
-    color: #e30713;
+    color: var(--besson);
 }
 .besson_link{
-    background-color: #e30713;
+    color: white;
+    background-color: var(--besson);
 }
 .alpego{
-    color: #4f8fcd;
+    color: var( --alpego);
 }
 .alpego_link{
-    background-color: #4f8fcd;
+    background-color: var( --alpego);
 }
 /*----- Besoin d'un renseignement ou d'une documentation ------*/
 .renseignement {
@@ -104,12 +105,14 @@
     justify-content: space-around;
     text-align: center;
 }
-
 .content_renseignement {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.item_contact_accueil{
+    margin: 0 1em;
 }
 .icones_contact{
     width: 5em;

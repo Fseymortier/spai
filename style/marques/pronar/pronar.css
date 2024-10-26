@@ -1,8 +1,26 @@
-/* ----------------------------------------------------------------------------------------
------------------Ce CSS gere les page pronar besson et alpego------------------------------
----------------------------------------------------------------------------------------- */
-
-/* Fonds du haut des page pronar besson et alpego */
+/* ------------------------------------------------------------------------------------------------------
+-----------------------------Ce CSS gere les pages pronar, besson et alpego------------------------------
+---------------les exeption pour les pages sont dans le fichier css de la page en question---------------
+-------------------------------------------------------------------------------------------------------*/
+.h1_pronar,.h2_pronar{
+    color: var(--pronar);
+}
+.h1_besson,.h2_besson{
+    color: var(--besson);
+}
+.h1_alpego,.h2_alpego{
+    color: var(--alpego);
+}
+.background_color_pronar{
+    background-color: var(--pronar);
+}
+.background_color_besson{
+    background-color: var(--besson);
+}
+.background_color_alpego{
+    background-color: var(--alpego);
+}
+/* ------------------------Fonds du haut des page pronar besson et alpego--------------------------- */
 .div_top_pronar,
 .div_top_besson,
 .div_top_alpego {
@@ -14,36 +32,64 @@
     background-position: center;
 }
 .div_top_pronar {
-    background-image: url('/spai/images/pronar/top_pronar.webp');
+    background-image: url('/images/pronar/top_pronar.webp');
 }
 .div_top_besson {
-    background-image: url('/spai/images/pronar/top_besson.webp');
+    background-image: url('/images/pronar/top_besson.webp');
 }
 .div_top_alpego {
-    background-image: url('/spai/images/pronar/top_alpego.webp');
+    background-image: url('/images/pronar/top_alpego.webp');
 }
 .txt_presentation_pronar {
     width: 40%;
     margin: 1em;
 }
-/* presentation du materiel avant les slider */
+/* ------------------------presentation du materiel avant les slider---------------------------- */
 .container_benne {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 .txt_presentation_benne {
     width: 60%;
     text-align: center;
     padding: 2em 0;
 }
-/* ------------------slider---------------- */
-.slider,
-.diapo {
-    position: relative;
-    height: 20em;
+/* ----------------------------------------- slider --------------------------------------------- */
+.slider-container {
     width: 100%;
+    position: relative;
+    height: 35em;
+    display: flex;
+    align-items: center;
+    margin: 1em 0 3em 0;
 }
+.slider {
+    display: flex;
+    max-width: 100%;
+    max-height: 25em;
+}
+/* ----------------- slider 3 images --------------------- */
+.slide {
+    text-align: center;
+    flex: 0 0 auto;
+    width: 33%;
+    padding: 0 1.68em;
+}
+/* ----------------- slider 2 images --------------------- */
+.slide2{
+    text-align: center;
+    flex: 0 0 auto;
+    width: 50%;
+    padding: 0 1.68em;
+}
+/* ------------------------------------------------------- */
+.img_slider_marque {
+    max-width: 100%;
+    max-height: 100%;
+}
+/* ----------------- fonds obliques --------------------- */
 .background {
     z-index: -1;
     position: absolute;
@@ -51,24 +97,28 @@
     width: 100%;
     transform: skewY(-5deg);
 }
-.background_amplirolls {
-    transform: skewY(5deg);
+/* ----------- fonds besson ------------- */
+.background_besson{
+    background-color: rgb(161, 161, 161);
 }
-/* contenu du materiel presenté endessous des sliders */
-.container_items_benne {
+/*--------------------------------- contenu du materiel presenté endessous des sliders------------------------------- */
+.container_caracs_materiels {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.items_benne {
+.caracs_materiels {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    width: auto;
+    width: 30%;
+    min-width: 18em;
     padding: 1em;
     margin: 1em;
+}
+.caracs_herse{
+    justify-content: space-between;
 }
 .container_dl {
     text-align: center;
@@ -77,16 +127,22 @@
     padding: 1em 1.5em;
     margin: 1em;
     border-radius: 1em;
+    text-align: center;
 }
-/* bouton de téléchargement sur la page gregoire besson */
+/* couleur pour les bouton de telechargement besson */
 .dl_document_besson {
     color: white;
 }
-
+/* -------------------------- media responsive------------------------------ */
 @media screen and (max-width: 1039px) {
     .txt_presentation_pronar,
     .txt_presentation_benne {
         width: 560px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .slider-container {
+        height: 25em;
     }
 }
 @media screen and (max-width: 600px) {

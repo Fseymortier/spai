@@ -5,8 +5,8 @@
 }
 .items_actualites{
     width: 45%;
-    min-width: 320px;
-    margin: 1em 0.5em;
+    min-width: 300px;
+    margin: 1em 0;
     height: 35em;
     display: flex;
     flex-wrap: wrap;

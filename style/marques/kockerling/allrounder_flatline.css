@@ -1,4 +1,11 @@
 .txt_allrounder_flatline{
-    width: 60%;
+    width: 40%;
     text-align: justify;
+    margin: 1em 0;
+}
+.item_flatline{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3em 0 1em 0;
 }
