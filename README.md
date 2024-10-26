@@ -1,4 +1,4 @@
-# Création du site SPAI qui est un concessionnaire agricole à partir de la première version du site déjà existant. 
+# Refont et optimisation du site du conssecionaire SPAI à partir de la première version du site déjà existant. 
 
 Correction des différents bugs présents.
 
